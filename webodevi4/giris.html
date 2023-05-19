@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feyza Ezber</title>
+    <link rel="stylesheet" href="styles/giris.css">
+</head>
+
+<body>
+
+       <!--login bölümü-->
+ <!--  <div class="login-form"> 
+        <form action="hosgeldiniz.html">
+            <h1>Login</h1>
+            <h5>(Lütfen Full Name ve Password yazan kutucuklara öğrenci numaranızı giriniz.)</h5>
+            <input type="text" placeholder="Full Name" class="txt">
+            <input type="password" placeholder="Password" class="txt">
+            <input type="submit" value="Login" class="login-btn">
+        </form>
+    </div>  -->
+
+    <div class="container">
+        <h1 class="label">Giriş</h1>
+        <form class="login_form" action="hosgeldiniz.html" method="post" name="form" onsubmit="return validated()">
+            <div class="font">Kullanıcı Adı(e-mail))</div>
+            <input autocomplete="off" type="text" name="email" placeholder="e posta giriniz" onkeyup="validateEmail">
+            <span id="text"></span>
+            <div id="email_error">Lütfen kullanıcı adı kısmını doldurun</div>
+            <div class="font font2">Şifre</div>
+            <input type="password" name="password" placeholder="Şifre giriniz">
+            <div id="pass_error">Lütfen şifre kısmını doldurun</div>
+            <button type="submit">Giriş Yap</button>
+        </form>
+     </div>
+
+     <script src="valid.js"></script>
+
+
+</body>
+</html>
